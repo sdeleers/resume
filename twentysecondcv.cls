@@ -85,19 +85,19 @@
 \newcommand{\cvmail}[1]{\renewcommand{\givencvmail}{#1}}
 \newcommand{\cvnumberphone}[1]{\renewcommand{\givennumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\givencvaddress}{#1}}
-\newcommand{\cvsite}[1]{\renewcommand{\givencvsite}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\givencvname}{#1}}
 \newcommand{\cvjobtitle}[1]{\renewcommand{\givencvjobtitle}{#1}}
 \newcommand{\languages}[1]{\renewcommand{\givenlanguages}{#1}}
 \newcommand{\computerskills}[1]{\renewcommand{\givencomputerskills}{#1}}
+\newcommand{\personalinfo}[1]{\renewcommand{\givenpersonalinfo}{#1}}
 
 \newcommand{\givencvname}{REQUIRED!}
 \newcommand{\givencvdate}{}
 \newcommand{\givencvmail}{}
 \newcommand{\givennumberphone}{}
 \newcommand{\givencvaddress}{} 
-\newcommand{\givencvsite}{}
 \newcommand{\givencvjobtitle}{}
+\newcommand{\givenpersonalinfo}{}
 \newcommand{\givenlanguages}{}
 \newcommand{\givencomputerskills}{}
 
@@ -129,33 +129,31 @@
 \begin{textblock}{6}(0.5, 0.2)
 \vspace{80pt}
 \begin{flushleft}
-\hspace{13pt}
+\hspace{2pt}
 \renewcommand{\arraystretch}{1.6}
-\begin{tabular}{p{0.5cm} @{\hskip 0.5cm}p{5cm}}
-\ifthenelse{\equal{\givencvdate}{}}{}{\textsc{\Large\icon{\Info}} & \givencvdate\\}
-\ifthenelse{\equal{\givencvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \givencvaddress\\}
-\ifthenelse{\equal{\givennumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \givennumberphone\\}
-\ifthenelse{\equal{\givencvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \givencvsite}\\
-\ifthenelse{\equal{\givencvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\givencvmail}{\givencvmail}} \newline
-\end{tabular}
 
-\begin{flushright}
+
+\begin{flushleft}
+\section{personal info}
+\givenpersonalinfo 
+\end{flushleft}
+\vspace{10pt}
+
+\begin{flushleft}
 \section{languages}
 \givenlanguages 
-\end{flushright}
+\end{flushleft}
+\vspace{10pt}
 
-\begin{flushright}
-\section{computer skills}
+\begin{flushleft}
+\section{programming languages}
 \givencomputerskills
-\end{flushright}
+\end{flushleft}
 
 \end{flushleft}
 \end{textblock}
 \vspace{-10pt}
  }
-
-
-
 
 %%%%%%%%%%%%%%%%
 % Section Color box %
@@ -207,7 +205,7 @@
 }
 \renewcommand{\bfseries}{\color{headercolor}}
 \newcommand{\twentyitem}[4]{%
-  \hspace{5pt}#1&\parbox[t]{11.5cm}{%
+  \hspace{5pt}#1&\parbox[t]{12.8cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize#3}\\%
@@ -225,7 +223,7 @@
 }
 \renewcommand{\bfseries}{\color{headercolor}}
 \newcommand{\twentyitemshort}[2]{%
-  \hspace{5pt}#1&\parbox[t]{11.5cm}{%
+  \hspace{5pt}#1&\parbox[t]{12.8cm}{%
     \textbf{#2}%
   }\\}
 
@@ -234,5 +232,5 @@
 % Page Setting %
 %%%%%%%%%%%%
 
-\RequirePackage[left=7.3cm,top=0.1cm,right=0.5cm,bottom=0.2cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.0cm,top=0.1cm,right=0.5cm,bottom=0.2cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}

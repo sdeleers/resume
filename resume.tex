@@ -11,15 +11,11 @@
 %%%%%%%%%%%%%%%%
 
 % \profilepic{linkedin_pic.png} %path of profile pic
-\cvname{Simon Deleersnyder} %your name
-\cvjobtitle{Mathematical Engineer}%your actual job position
-\cvdate{11 November 1990}%date of birth
-\cvaddress{Grezstraat 20, 3054 Vaalbeek, Belgium}%address
-\cvnumberphone{+32 472 76 55 79}%telphone number
-\cvmail{simon.deleersnyder@gmail.com}%e-mail
-\cvsite{http://www.peacytea.com}%personal site
-\languages{Dutch: mother tongue\\English: excellent\\French: good\\}
-\computerskills{Python, Java, C, C++, Bash, Matlab, Fortran, SQL, Django, Android, Swift, CAD, PCB design, PHP, HTML/CSS}
+\cvname{Simon Deleersnijder} %your name
+\cvjobtitle{Software Engineer}%your actual job position
+\personalinfo{11/11/1990\\\vspace{3pt}Leuven, Belgium\\\vspace{3pt}simon.deleersnijder@gmail.com\\\vspace{3pt}github.com/sdeleers\\\vspace{3pt}+32472765579}
+\languages{Dutch: mother tongue\\\vspace{3pt}English: excellent\\\vspace{3pt}French: intermediate\\\vspace{3pt}}
+\computerskills{C++, Python}
 
 \makeprofile
 %%%%%%%%%%%%%%%%%%%%
@@ -54,34 +50,59 @@
 \end{twenty}
 
 
-\section{experience}
+\section{work experience}
 \begin{twenty}
+  \twentyitem
+    {2017-}
+    {Pickit}
+    {Heverlee, Belgium}
+    {\textit{Software engineer}\\Pickit is a robotics company that offers bin picking solutions using 3D vision. The main challenges in bin picking are developing fast and accurate object detection algorithms, and smart picking strategies. My main contributions were improving the object detection pipeline: increasing the number of detected objects, while limiting the computation time required to do this.}
+
   \twentyitem
     {2014-2016}
     {Esloq}
     {Leuven, Belgium}
     {\textit{Co Founder}\\We built smartphone controlled door locks which were installed mainly at coworking spaces and B\&Bs. We decided to stop in 2016 because of insufficient traction. In my opinion this was mainly due to a lack of sales experience.}
+\end{twenty}
+
+\section{personal projects}
+\begin{twenty}
+  \twentyitem
+    {2017}
+    {Autonomous car with reinforcement learning}
+    {}
+    {I used reinforcement learning to teach a self-driving car to drive around a track in simulation. My main contributions were building the simulation environment, and defining the network structure and the reward function. For training the network I used open source software. Video: youtube.com/watch?v=CPeUW1vXqR0}
+  \twentyitem
+    {2019}
+    {Longest repeated string on Wikipedia}
+    {}
+    {I used suffix arrays to find the longest repeated string within a set of documents. Scaling the suffix tree to the size needed for Wikipedia caused issues both with RAM and computation time, and caused me to not finish the project.}
+  \twentyitem
+    {2018}
+    {Notifications for booking badminton courts}
+    {}
+    {I made a small script that periodically polled the booking web server and sent me an email whenever reservations could be made for that week. These times would differ from week to week, to avoid queues of people booking all at the same time.}
+\end{twenty}
+
+\section{other experiences}
+\begin{twenty}
+  \twentyitem
+    {2014}
+    {}
+    {USA}
+    {I hiked from Mexico to Canada along the Pacific Crest Trail. The 2600 mile long trail took me 149 days to complete.}
+
   \twentyitem
     {2013-2014}
     {KU Leuven}
     {Leuven, Belgium}
-    {\textit{Research Assistant}\\I helped develop a MOOC for a course on control theory. My task was to illustrate the course's concepts with clear examples and write both the front and back end of the MOOC.}
-    \twentyitem
+    {\textit{Research Assistant, 6 months}\\I helped develop an online course for a course on control theory. I mainly illustrated the course’s concepts with clear examples.}
+  \twentyitem
     {2012}
     {IPCOS}
     {Haasrode, Belgium}
-    {\textit{Summer Intern}\\IPCOS uses mathematical models of chemical plants to control them with MPC. I automated the tuning of the parameters of these models which alleviated the work that needed to be done on-site by an engineer.}
+    {\textit{Summer Intern, 6 weeks}\\IPCOS uses mathematical models of chemical plants to control them with MPC. I automated the tuning of the parameters of these models which alleviated the work that needed to be done on-site by an engineer.}
 \end{twenty}
 
-\section{interests}
-\begin{itemize}
-    \item automatization, embedded devices, machine learning (see www.peacytea.com)
-  \item futsal, running, hiking, biking, guitar
-\end{itemize}
-
-\section{extracurricular}
-\begin{itemize}
-  \item After I graduated university I hiked from Mexico to Canada on the Pacific Crest Trail. The 2660 mile long trail took me 149 days to complete.\\
-\end{itemize}
 
 \end{document} 
