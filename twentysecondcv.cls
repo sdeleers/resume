@@ -115,23 +115,23 @@
 \newcommand{\makeprofile}
 {
 \begin{tikzpicture}[remember picture,overlay]
-   	 \node [rectangle, fill=asidecolor, anchor=west, minimum width=\paperwidth+2cm, minimum height=5cm] (box) at (-8cm,0cm){};
+   	 \node [rectangle, fill=asidecolor, anchor=west, minimum width=\paperwidth+2cm, minimum height=4.25cm] (box) at (-8cm,0cm){};
 \end{tikzpicture}
 
 \begin{tikzpicture}[remember picture,overlay]
    	 \node [rectangle, fill=asidecolor, anchor=north, minimum width=9.90cm, minimum height=\paperheight+1cm] (box) at (-5cm,0.5cm){};
 \end{tikzpicture}
 
+\vspace{-10pt}
 {\Huge\color{mainblue}\givencvname} \newline
 {\Large\color{black!80}\givencvjobtitle}
 \vspace{20pt}
 
 \begin{textblock}{6}(0.5, 0.2)
-\vspace{80pt}
+\vspace{63pt}
 \begin{flushleft}
 \hspace{2pt}
 \renewcommand{\arraystretch}{1.6}
-
 
 \begin{flushleft}
 \section{personal info}
